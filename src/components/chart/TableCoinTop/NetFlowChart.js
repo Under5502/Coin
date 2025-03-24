@@ -90,6 +90,7 @@ export default function NetFlowChart() {
       <div style={{ minWidth: "550px" }}>
         <ResponsiveContainer width="100%" height={300}>
           <ComposedChart data={data}>
+            a
             <CartesianGrid stroke="#334155" />
             <XAxis dataKey="date" stroke="#94a3b8" />
             <YAxis
