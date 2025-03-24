@@ -1,0 +1,133 @@
+.current-round {
+  background: #0f0c1a;
+  padding: 24px;
+  border-radius: 20px;
+  color: #fff;
+  max-width: 45%;
+  font-family: "Segoe UI", sans-serif;
+  position: absolute;
+  top: 43%;
+  right: 1%;
+  width: 51%;
+  height: 51%;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+
+    .status {
+      font-size: 0.9rem;
+      color: white;
+
+      padding: 4px 10px;
+      border-radius: 12px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 24px;
+  }
+
+  .circle-wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+
+    .circle-border {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .ticks {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 50%;
+        transform: rotate(227deg);
+      }
+
+      .tick {
+        position: absolute;
+        width: 10px;
+        height: 32px; // gấp đôi độ dày sọc
+        background: #341818;
+        top: 0;
+        left: 50%;
+        transform-origin: center 110px;
+
+        &.active {
+          width: 6px;
+          background: #341219;
+          box-shadow: 0 0 6px #ff0055;
+        }
+      }
+    }
+
+    .center-info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80%;
+      height: 113%;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .currency {
+        font-size: 1.1rem;
+        color: #aaa;
+        margin-bottom: 6px;
+      }
+
+      .amount {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ff0055;
+      }
+    }
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .detail-item {
+      display: flex;
+      align-items: center;
+      font-size: 0.95rem;
+      gap: 30px;
+
+      .dot {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+
+      .label {
+        color: #999;
+        flex: 1;
+      }
+
+      .value {
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+  }
+}

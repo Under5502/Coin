@@ -1,0 +1,23 @@
+.body-container {
+  position: absolute;
+  color: white;
+  top: 30%;
+  right: -23%;
+
+  .body-content {
+    display: flex;
+    gap: 20px;
+
+    .body-main {
+      background-color: #0c2c4080;
+      padding: 20px;
+      border-radius: 25px;
+
+      .body-top {
+        display: flex;
+        gap: 3%;
+        margin-bottom: 3%;
+      }
+    }
+  }
+}

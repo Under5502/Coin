@@ -1,0 +1,106 @@
+// BinanceBody.scss
+.binance-body {
+  border-radius: 50px;
+  padding: 20px;
+  color: #fff;
+  background-color: #0f0c1a;
+  font-family: "Inter", sans-serif;
+  width: 45%;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .price-info {
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: 4px;
+      font-size: 14px;
+    }
+
+    .up {
+      color: #e11d48; // đỏ
+    }
+
+    .down {
+      color: #f87171; // Red
+    }
+  }
+
+  .dropdown {
+    position: relative;
+
+    .dropdown-button {
+      background-color: #1c1730;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: #27282f;
+      }
+      .arrow {
+        font-size: 10px;
+      }
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 110%;
+      right: 0;
+      background-color: #1c1d22;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      list-style: none;
+      padding: 8px 0;
+      margin: 0;
+      width: 140px;
+      z-index: 99;
+      display: none;
+      animation: fadeIn 0.2s ease-in-out;
+
+      li {
+        padding: 10px 16px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #f1f1f1;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #2c2d35;
+        }
+      }
+    }
+
+    &:hover .dropdown-menu {
+      display: block;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

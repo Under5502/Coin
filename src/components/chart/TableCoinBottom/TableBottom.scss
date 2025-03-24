@@ -1,0 +1,71 @@
+.navigates-bottom {
+  background: #0b1c26;
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 39%;
+  right: 1%;
+  max-width: 1200px;
+  margin: 3rem auto;
+  position: absolute;
+  top: 197%;
+
+  &__table {
+    width: 100%;
+    margin-top: 3%;
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 12px;
+      font-size: 0.95rem;
+
+      min-width: 600px;
+
+      thead {
+        background-color: #13242f;
+        border-radius: 12px;
+
+        th {
+          padding: 1rem;
+          text-align: left;
+          font-weight: 600;
+          color: #80f5ec;
+          border-bottom: 1px solid #23333f;
+        }
+      }
+
+      tbody {
+        tr {
+          transition: background 0.25s ease;
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+          }
+
+          td {
+            padding: 1rem;
+            border-bottom: 1px solid #23333f;
+            color: #ffffff;
+
+            &:first-child {
+              font-weight: bold;
+              color: #b0c4d4;
+            }
+          }
+
+          .green {
+            color: #1fffab;
+            font-weight: 500;
+          }
+
+          .red {
+            color: #ff6464;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Layout from "./Layout";
+import Signal from "./Layout/Home/Home";
+import Binance from "./Layout/Binance/BinanceHome/Binance";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        {/* Layout là route cha */}
+        <Route path="/" element={<Layout />}>
+          {/* Signal là route con, sẽ render trong <Outlet /> */}
+          <Route index element={<Signal />} />
+          <Route path="binance" element={<Binance />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 

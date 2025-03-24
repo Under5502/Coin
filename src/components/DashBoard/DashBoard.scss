@@ -1,0 +1,120 @@
+.dashboard-container {
+  position: absolute;
+  top: 13%;
+  right: 55%;
+  color: white;
+
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .signal-dashboard-r {
+      display: flex;
+      gap: 5%;
+
+      .create-l {
+        display: flex;
+        gap: 6%;
+        border: 1px solid #275d73;
+        border-radius: 50px;
+        padding: 5px 20px;
+
+        .all-chain {
+          color: white;
+        }
+        .img-create {
+          background-color: #275d73;
+          padding: 5px;
+          border-radius: 50px;
+          /* width: 83%; */
+          height: 8px;
+        }
+        .title-create-l {
+          color: white;
+        }
+        .title-create-l1 {
+          margin-right: 10px;
+          color: white;
+        }
+      }
+
+      .create-r {
+        display: flex;
+        gap: 6%;
+        border: 1px solid #275d73;
+        border-radius: 50px;
+        padding: 5px 20px;
+        .img-back {
+          /* color: black; */
+          /* width: 20px; */
+          padding: 5px;
+          border-radius: 50px;
+          /* width: 83%; */
+          height: 8px;
+          background-color: white;
+          margin-right: 10px;
+          color: black;
+        }
+        .title-create-r {
+          color: white;
+        }
+        .title-create-r1 {
+          color: white;
+        }
+      }
+    }
+
+    .sp-title {
+      border: none;
+      padding: 7px 20px;
+      border-radius: 50px;
+      background-color: #76e1db;
+      font-size: 15px;
+      font-weight: 600;
+      margin-left: 14%;
+      color: black;
+    }
+    .signal-dashboard {
+      display: flex;
+      justify-content: space-between;
+      gap: 160%;
+    }
+
+    .signal-title {
+      display: flex;
+      margin-left: 41%;
+      gap: 40%;
+      .span-signal {
+        font-size: 24px;
+        font-weight: 600;
+        color: #76e1db;
+      }
+    }
+
+    .chain {
+      display: flex;
+      gap: 3px;
+      border: 1px solid #275d73;
+      border-radius: 50px;
+      padding: 5px 30px;
+
+      .back-img {
+        position: absolute;
+        width: 2%;
+        height: 32%;
+        top: 63%;
+        right: 42%;
+
+        /* margin-left: 5px; */
+      }
+      .all-chain {
+        margin-left: -13px;
+        color: white;
+      }
+      .all-chain-l {
+        color: white;
+      }
+    }
+  }
+}

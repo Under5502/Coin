@@ -1,0 +1,87 @@
+.heatmap-grid {
+  border: 1px solid white;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 1px;
+  width: 39%;
+  height: 88%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1px;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  position: absolute;
+  top: 204%;
+  right: 45%;
+  background-color: white;
+  grid-auto-flow: dense;
+  border-radius: 2%;
+}
+
+.heatmap-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .symbol {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  .price {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+
+  .change {
+    font-size: 13px;
+    margin-top: 6px;
+    opacity: 0.85;
+  }
+
+  &.positive {
+    background-color: #2dbf75;
+  }
+
+  &.negative {
+    background-color: #f15757;
+  }
+
+  &.neutral {
+    background-color: #a0a0a0;
+  }
+}
+
+// Responsive nhỏ gọn hơn
+@media screen and (max-width: 768px) {
+  .heatmap-grid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .heatmap-item {
+    .symbol {
+      font-size: 16px;
+    }
+    .price {
+      font-size: 13px;
+    }
+    .change {
+      font-size: 12px;
+    }
+  }
+}

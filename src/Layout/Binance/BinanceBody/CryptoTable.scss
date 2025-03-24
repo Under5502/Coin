@@ -1,0 +1,55 @@
+.crypto-table {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  font-family: "Segoe UI", sans-serif;
+  position: absolute;
+  top: 102%;
+  width: 94%;
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #76e1db;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+
+    thead {
+      th {
+        text-transform: uppercase;
+        padding: 12px;
+        text-align: left;
+        color: #76e1db;
+      }
+      border-bottom: 1px solid #76e1db;
+    }
+
+    tbody {
+      tr {
+  
+
+        td {
+          padding: 12px;
+        }
+
+        .coin-name {
+          font-weight: 600;
+        }
+
+        .up {
+          color: #22c55e; // xanh
+        }
+
+        .down {
+          color: #ef4444; // đỏ
+        }
+      }
+    }
+  }
+}
